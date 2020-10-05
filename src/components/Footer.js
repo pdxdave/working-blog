@@ -26,14 +26,14 @@ export const Footer = () => {
             <FooterSocialWrapper>
                 <FooterSocialIcons>
                     <a 
-                        href="https://twtter.com" 
+                        href="https://twitter.com/webdevdave1" 
                         target="_blank"
                         rel="noopener noreferrer"
                     >
                         <img src={data.twitter.publicURL} alt="twitter"/>
                     </a>
                     <a 
-                        href="https://linkedin.com" 
+                        href="https://www.linkedin.com/in/dave-martinson-637b80191/" 
                         target="_blank"
                         rel="noopener noreferrer"
                     >
