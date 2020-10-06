@@ -1,6 +1,12 @@
 
 
 module.exports = {
+  siteMetadata: {
+    title: "PDXDave Blog",
+    description: "A blog covering a variety of topics related to web development",
+    image: "/buildings.jpg",
+    twitterUsername: "webdevdave1",
+  },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
