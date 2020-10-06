@@ -57,7 +57,7 @@ export const P = styled.p `
         }
     }};
 
-    text-align: ${props => props.textAlign ? props.textAlign : "left"}
+    text-align: ${props => props.textAlign ? props.textAlign : "left"};
 `
 
 export const H1 = styled.h1 `

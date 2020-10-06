@@ -21,7 +21,9 @@ export default {
         xSmall: ".5rem",
         small: "1rem",
         medium: "2rem",
-        large: "3rem"
+        large: "3rem",
+        xLarge: "4rem",
+        xxLarge: "6rem",
     },
     animtions: {
         button: "box-shadow 0.3s ease",
