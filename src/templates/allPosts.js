@@ -26,12 +26,10 @@ const allPosts = ({pageContext, data}) => {
             <FeatureImage />
             <Content>
                 <H1 textAlign="center" margin="0 0 1rem 0">
-                    This is a test title
+                    Musings Of A Software Developer
                 </H1>
                 <P color="dark2" textAlign="center">
-                    blah blah blah blah blah blah blah blah 
-                    blah blah blah blah blah blah blah blah 
-                    blah blah blah blah blah blah blah blah 
+                    Hello, and welcome.  My name is David Martinson.  Feel free to follow along as I post comments about projects I'm working on and technologies I'm learning about.
                 </P>
                 {posts.map(post => (
                     <ContentCard 
