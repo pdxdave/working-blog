@@ -1,0 +1,22 @@
+---
+title: Gatsby Fluid maxWidth - Great but with a gotcha
+slug: gatsby-fluid-maxwidth
+datae: 2020-10-10
+featureImage: barn.jpg
+excerpt: If you’re thinking about checking out Gatsby (a React-based open source framework), one of the cool features it offers is a library called gatsby-transformer-sharp.
+---
+
+If you’re thinking about checking out Gatsby (a React-based open source framework), one of the cool features it offers is a library called gatsby-transformer-sharp.  In a nutshell, it allows you to leave the resizing and responsiveness of images up to Gatsby.  For example, let’s say you have an image that’s 2560x1400 and it’s 2.5MB in size.  Furthermore, you want to render this image in phone, tablet, and desktop displays.  In the past I would resize an image for each screen size, optimize it for the web, and then generate media queries to pull up the image when needed.  Gatsby takes care of all of this.  In fact, I can just drop an original image into and images folder and call it good.  
+
+<br />
+
+Now in spite of all of this coolness, there is one gotcha that you should be aware of and the reason for this post. 
+
+<br />
+
+Gatsby refers to responsive images as “fluid” images.  Behind the scenes what Gatsby is doing is taking the images, resizing them, optimizing them for the web and putting them in to an html <source> tag and utilizing the srcset attribute. So in the end you’ll have a number of images at different widths; for instance, 200w, 400w, 800w, 1200w and 1600w.  Depending on the display Gatsby will serve up the most appropriate image size. 
+
+<br />
+
+Now where this can get wonky is if you try to adjust the width of the image in the graphql object. For instance, you may think that you want to make sure the maxWidth is set to 100.  “Got to make sure it spans the width of the page!”  What you’re really doing though is telling Gatsby that the image size is 100w, therefore it will generate different sizes in the <source> tag.  You’ll likely end up with something like 25w, 50w, 100w, 150w, 200w.  Now even though the images will span the intended width, they’ll look very pixelated.  You can see this in the screen shot below. 
+
