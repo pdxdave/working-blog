@@ -29,8 +29,8 @@ const allPosts = ({pageContext, data}) => {
                     Musings Of A Software Developer
                 </H1>
                 <P color="dark2" textAlign="center">
-                    Hello, and welcome.  My name is David Martinson.  Feel free to follow along as I post comments about projects I'm working on, technologies I'm learning about, and thoughts 
-                    about the software industry.
+                    Hello, and welcome.  My name is David Martinson.  Feel free to follow along as I post comments about projects I'm working on, technologies I'm learning about, thoughts 
+                    about the software industry and software developer interviews.
                 </P>
                 {posts.map(post => (
                     <ContentCard 
