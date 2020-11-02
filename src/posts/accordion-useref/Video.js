@@ -26,10 +26,14 @@ const RegVideoWrapper = styled.div `
         object-fit: cover;
     }
 
-    @media (min-width: 1280px) {
-        margin: 0 auto 5rem;
+    @media (min-height: 720px){
+        margin: 0 auto 6.5rem;
+    }
+    @media (min-width: 1280px){
+        margin: 0 auto 6rem;
     }
     @media (min-width: 1600px) {
         margin: 0 auto;
     }
+
 `
