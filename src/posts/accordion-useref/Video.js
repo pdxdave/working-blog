@@ -27,7 +27,7 @@ const RegVideoWrapper = styled.div `
     }
 
     @media (min-height: 720px){
-        margin: 0 auto 6.5rem;
+        margin: 0 auto 9rem;
     }
     @media (min-width: 1280px){
         margin: 0 auto 6rem;
